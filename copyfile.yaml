@@ -1,9 +1,9 @@
-- name: Copy file to hosts
+- name: Create an empty file
   hosts: all
   gather_facts: true
   become: false
   tasks:
-    - name: Copy file
-      copy:
-        src: /home/admin/Documents/ansiblefiles/nginx.yml
-        dest: /root/musicfiles
+    - name: Create empty file
+      file:
+        path: /root/musicfiles
+        state: touch
