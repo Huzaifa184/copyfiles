@@ -5,5 +5,5 @@
   tasks:
     - name: Copy file
       copy:
-        src: /path/to/local/file
-        dest: /path/to/remote/file
+        src: /home/admin/Documents/ansiblefiles/nginx.yml
+        dest: /root/musicfiles
