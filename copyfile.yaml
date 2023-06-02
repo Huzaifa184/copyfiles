@@ -1,0 +1,9 @@
+- name: Copy file to hosts
+  hosts: all
+  gather_facts: true
+  become: false
+  tasks:
+    - name: Copy file
+      copy:
+        src: /path/to/local/file
+        dest: /path/to/remote/file
